@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Metas -->
+      <meta charset="utf-8">
+      <title>KOL Influencers</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Css -->
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/flexslider.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="css/magnific-popup.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
+          <link href="css/semantic.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="http://fonts.googleapis.com/css?family=Dosis:100,300,400,600,700" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,300,400,400i,600,700,800" rel="stylesheet">
+   </head>
+   <body ng-app="igniteApp" ng-controller="registerCtrl">
+      <!-- Preloader -->
+      <div class="loader">
+         <!-- Preloader inner -->
+         <div class="loader-inner">
+            <svg width="120" height="220" viewbox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
+               <circle class="spinner" cx="50" cy="50" r="21" fill="#13181d" stroke-width="2"/>
+            </svg>
+         </div>
+         <!-- End preloader inner -->
+      </div>
+      <!-- End preloader-->
+      <!--Wrapper-->
+      <div class="wrapper">
+         <div class="block-search-form">
+            <div class="block-content">
+               <div class="container">
+                  <!--end of row-->
+                  <div class="row justify-content-center">
+                     <div class="col-12 col-md-10 col-lg-8">
+                        <form method="get"  >
+                           <div class="card  bg-red ">
+                              <div class="card-body  row no-gutters align-items-center">
+                                 <div class="col-auto">
+                                    <i class="icon-search"></i>
+                                 </div>
+                                 <!--end of col-->
+                                 <div class="col">
+                                    <input class="form-control form-control-lg form-control-border0" placeholder="Type a keywords..." type="search">
+                                 </div>
+                                 <!--end of col-->
+                                 <div class="col-auto">
+                                    <button type="submit" class="btn  btn-primary uppercase border-3">
+                                    Search now</button>
+                                 </div>
+                                 <!--end of col-->
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                     <!--end of col-->
+                  </div>
+                  <!--end of row-->
+               </div>
+            </div>
+         </div>
+         <!--Hero section-->
+         <header class="header default">
+            <div class=" left-part">
+               <a class="logo scroll" href="#wrapper">
+                  <img src="../assets/img/logo.png" style="width:80px; padding-top:15px"/>
+               </a>
+            </div>
+            <div class="right-part">
+               <nav class="main-nav">
+                  <div class="toggle-mobile-but">
+                     <a href="#" class="mobile-but" >
+                        <div class="lines"></div>
+                     </a>
+                  </div>
+                  <ul class="main-menu list-inline">
+                     <li><a class="scroll list-inline-item" href="/register.html" style="font-size:14px">Register</a></li>
+                     <li><a class="scroll list-inline-item" href="#about" style="font-size:14px">Login</a></li>
+
+
+                     </li>
+
+
+
+                     </li>
+                     <li>
+
+                  </ul>
+               </nav>
+            </div>
+         </header>
+
+         <section id="about" class="about main">
+            <div class="background-img" >
+               <img  src="img/25.jpg" alt="">
+            </div>
+            <!--Container-->
+            <div class="container" >
+               <!--Row-->
+               <div class="row">
+                
+                  <div class="col-lg-12" style="margin-top:10px">
+                    <form class="ui inverted responsive form " style="padding:10px" id="form1">
+                  <div class="ui negative message" ng-show="hasError">
+  <div class="uiheader">Registration failed</div>
+  <p ng-repeat="err in Error">{{err.reason}}</p>
+</div>
+
+<div class="ui positive message" ng-show="registrationSuccess">
+<div class="uiheader">registration successful</div>
+<p >Registration completed, please check your email you will be informed of the audition process</p>
+</div>
+
+
+    <h1 class="uppercase text-white">TERMS AND CONDITIONS</h1>
+        <div class="field text-white">
+           <h4>INTRODUCTION</h4>
+           <p>The terms set out in this Produce KOL 练习生 Website Terms and Conditions are intended to set out the terms for the use and access of the Produce KOL 练习生 Website and any of the Produce KOL 练习生 Services made available to You by KOLS Sdn Bhd.</p>
+           <h4>DEFINITIONS</h4>
+           <p><b>"Application" or "Apps"</b> means an app that is owned by KOLS Sdn Bhd which is made available to You for download from the app store such as Apple app store or Google Play or any other authorized app download site soon;</p>
+           <p><b>"KOLS"</b> means KOLS Sdn Bhd (Company No: 1329248-K) a company incorporated in Malaysia under the Companies Act, 1965 of Malaysia and having its registered office at 2-68, Second Floor, Viva Shopping Mall, 85, Jalan Loke Yew, 55200 Kuala Lumpur.</p>
+           <p><b>"Produce KOL 练习生 ID"</b> means the unique identifier of Your log in account that is provided to You upon successful registration, allowing You to access various Produce KOL 练习生 Services online;</p>
+           <p><b>"Produce KOL 练习生 Website"</b> means this website and any of the websites owned or managed by the KOLS and includes the web services and any other micro sites as made available to you by KOLS;</p>
+           <p><b>"Content"</b> means audio, video (including video clips and video streaming), messages, files, data, images, photographs, software, pictures, logos, live feeds, information, on demand content and games;</p>
+           <p><b>"Device"</b> means personal computer, electronic tablet, mobile phone, smartphone, media streaming device, smart TVs or any similar devices;</p>
+           <p><b>"Downloadable Content"</b> means Content made available to You for download and to be played back at a later time on the Device;</p>
+           <p><b>"License Agreement"</b> means the end user license and terms and conditions for use of the Software;</p>
+           <p><b>"Linked Website"</b> means links from or to the Produce KOL 练习生 Website to third party websites;</p>
+           <p><b>"Personal Information"</b> means the personal information or sensitive personal information as stated in the General Consumer Code of Practice for the Communications and Multimedia Industry Malaysia and/or any other applicable legislation relating to data protection, including, without limitation, the Personal Data Protection Act 2010;</p>
+           <p><b>"Preview Content"</b> means Content and selected User Generated Content that has been edited by KOLS and Posted on the Produce KOL 练习生 Website and/or the App for preview the viewing and browsing benefit of visitors to the Produce KOL 练习生 Website and/or the App;</p>
+           <p><b>"Post" or "Posted" or "Posting"</b> means to publish, display, submit and/or upload;</p>
+           <p><b>"Privacy Policy"</b> means the Produce KOL 练习生 Privacy Policy </p>
+           <p><b>"Streaming"</b> mean a contemporaneous digital transmission of an audio visual work via the internet from the Produce KOL 练习生 Services to a User’s Device in such a manner that the audio visual work is intended for real-time viewing and not intended to be copied, stored, permanently downloaded, or redistributed by the User;</p>
+           <p><b>"Software"</b> means any software used in connection with the Produce KOL 练习生 Website and/or the Application developed by or licensed to KOLS;</p>
+           <p><b>"TOU"</b> means this Produce KOL 练习生 Website Terms and Conditions for the Produce KOL 练习生 Website or Produce KOL 练习生 Services managed by KOLS;</p>
+           <p><b>"Us", "We", "Ours"</b> means KOLS;</p>
+           <p><b>"User"</b> means a person who accesses or uses any Produce KOL 练习生 Website or Produce KOL 练习生 Services;</p>
+           <p><b>"User Generated Content" or "UGC"</b> means any uploaded material, data shared or contribution made which includes without limitation all forms of text, links, photographs, graphics, video (including video clips and video streaming), audio, files, images, pictures, logos, news, live feed or other data or information posted by any User (including You) on our Produce KOL 练习生 Website;</p>
+           <p><b>"Video Player"</b> means the software program that allows the playback of audio-video formats and/or files;</p>
+           <p><b>"You" and "Your"</b> means any User of the Produce KOL 练习生 Website or Produce KOL 练习生 Services which shall include Produce KOL 练习生 ID registered members and "your" shall be interpreted accordingly.</p>
+           <h4>1. ACCEPTANCE OF TERMS - GENERAL</h4>
+           <p>1.1. The use of the Produce KOL 练习生 Website or Produce KOL 练习生 Services is subject to this TOU. Some of the Produce KOL 练习生 Services may have additional terms of use. By accessing and using the Produce KOL 练习生 Website or Produce KOL 练习生 Services you agree to be bound by this TOU and such additional terms of use, which may be posted by KOLS on the Produce KOL 练习生 Website from time to time.</p>
+           <p>1.2. You agree that KOLS may modify and amend this TOU at any time without notice. Unless explicitly stated otherwise, any new service introduced by KOLS shall be subject to this TOU. You are responsible for regularly reviewing Produce KOL 练习生's TOU posted on the Produce KOL 练习生 Website. By continuing to use the Produce KOL 练习生 Website or Produce KOL 练习生 Services, you are deemed to have agreed to be bound by any modifications and amendments to this TOU.</p>
+           <p>1.3. You can access the Produce KOL 练习生 Website home page and browse the Website without disclosing your Personal Information. The service and links of the Produce KOL 练习生 Website may include links to third party websites and are subject to Clause 10 herein.</p>
+           <p>1.4. Owing to the global nature of the internet infrastructure, the information you provide may be transferred in transit to countries that do not have similar protection regarding your data and its use as set out in this terms and conditions. By submitting your information, you consent to these transfers.</p>
+           <h4>2. REGISTRATION, USE AND SECURITY</h4>
+           <p>2.1. To have a Produce KOL 练习生 ID, you must provide the information required in the Produce KOL 练习生 ID registration form. You will need to provide a unique password, e-mail address and phone number upon completing the Produce KOL 练习生 ID registration process. You are responsible for maintaining the confidentiality of the password, e-mail address and phone number, and are fully responsible for all activities that occur under your password or e-mail address or phone number whether or not actually or expressly authorized and/or used by You.</p>
+           <p>2.2. You agree to: (a) provide true, accurate, current and complete information about yourself as prompted by the Produce KOL 练习生 ID registration form and (b) maintain and promptly update such registration data to keep it accurate, current and complete and (c) you should not use another’s account without permission. If you provide any information that is untrue, inaccurate, not current or incomplete, or if KOLS suspects that such information is untrue, inaccurate, not current or incomplete, KOLS has the right to suspend or terminate your Produce KOL 练习生 ID and refuse any and all current or future use of the Produce KOL 练习生 Website (or any part thereof).</p>
+           <p>2.3. KOLS reserves the right to terminate any dormant Produce KOL 练习生 ID that has not been used for a period of six months or longer.</p>
+           <p>2.4. Information on the Produce KOL 练习生 Website may contain technical inaccuracies or typographical errors. Information may be changed or updated without notice. KOLS may also make improvements and/or changes to the Produce KOL 练习生 Website at any time without notice.</p>
+           <p>2.5. The Produce KOL 练习生 Website may not be available to all Devices which connect to the Internet. You assume all responsibility regarding the end-user equipment and software necessary to access the Produce KOL 练习生 Website and assume all risk associated therewith.</p>
+           <p>2.6. The Produce KOL 练习生 Website may not be available to be accessed from all regions and countries of the world. KOLS reserves the right, in its sole discretion, to limit or terminate your ability to access the Produce KOL 练习生 Website from certain regions or countries, and you assume all risk associated with the accessibility of the Produce KOL 练习生 Service.</p>
+           <p>2.7. KOLS reserves the right to limit or prohibit Your access and use of its website in its sole discretion and shall not be liable for such limitation or prohibition.</p>
+           <h4>3. YOUR CONDUCT</h4>
+           <p>3.1. You agree to use the Produce KOL 练习生 Website and Produce KOL 练习生 Service only for lawful purposes and in accordance with this TOU and in a way that does not infringe the rights of, restrict or inhibit anyone else’s use and enjoyment of the Produce KOL 练习生 Website and Produce KOL 练习生 Service.</p>
+           <p>3.2. You agree to (a) notify KOLS immediately of any unauthorized use or any other breach of security, and (b) ensure that you exit from your Produce KOL 练习生 ID at the end of each session. KOLS cannot and will not be liable for any loss or damage arising from your failure to comply with this provision.</p>
+           <p>3.3. The Produce KOL 练习生 Website is provided to You for Your private and personal use only. You shall not allow any other person to: (a) resell, timeshare, sublicense, or otherwise transfer all or any portion of the Produce KOL 练习生 Website to any other party; or (b) make commercial use of the Produce KOL 练习生 Website without the express written consent of KOLS. You will not broadcast, copy, download, frame, reproduce, republish, or transmit in any manner whatsoever, any material on the Produce KOL 练习生 Website except as is strictly necessary for Your own personal non-commercial home use.</p>
+           <p>3.4. You agree to abide by all applicable local, state, national and international laws and regulations and are solely responsible for all acts or omissions that occur under your usage, including the content of your communication through the Produce KOL 练习生 Service. Recognizing the global nature of the Internet, you agree to comply with all local rules regarding online conduct. Specifically, you agree to comply with all applicable laws regarding on-line communication in the country in which you reside.</p>
+           <p>3.5. You may not use the Produce KOL 练习生 Website in any manner that could damage, disable, overburden, or impair the Produce KOL 练习生 Website (or the network(s) connected to Produce KOL 练习生 Service) or interfere with any other party's use and enjoyment of the Produce KOL 练习生 Service. You may not attempt to gain unauthorized access to the Produce KOL 练习生 Website and other Produce KOL 练习生 ID, computer systems or networks connected to the Produce KOL 练习生 Website, through hacking, password mining or any other means. You may not obtain or attempt to obtain any materials or information through any means not intentionally made available through the Produce KOL 练习生 Website.</p>
+           <p>3.6. You agree to be responsible for payment of (i) registration or subscription fees (where applicable), (ii) the charges for the Content that is requested by you and (iii) any charges that Produce KOL 练习生 may stipulate from time to time and all applicable charges incurred as a result of your use of the Produce KOL 练习生 Service, including but not limited to the use or misuse by an unauthorized third party, or any error, accidental use or loss ("Charges").</p>
+           <p>3.7. You will not post or transmit through the Produce KOL 练习生 Website any defamatory, harmful, obscene, threatening, pornographic or otherwise illegal material or material which would violate or infringe in any way upon our rights or those of others (including intellectual property rights, rights of confidentiality, or rights of privacy) or cause distress or inconvenience. You must not express opinions that are crude, racist sexist, vulgar, or otherwise offensive. Always treat other users with respect.</p>
+           <p>3.8. You will not post or otherwise make available on the Produce KOL 练习生 Website any material, which you do not own without the express permission of the owner of the material.</p>
+           <p>3.9. You will not broadcast, copy, download, frame, reproduce, republish, transmit in any manner whatsoever, any material on the Produce KOL 练习生 Website except as is strictly necessary for your own personal non-commercial home use.</p>
+           <p>3.10. You agree not to alter or modify any part of our Website, including but not limited to the embedded Video Player or any of its related technologies.</p>
+           <p>3.11. You will not reproduce, trade, resell, sell, or exploit for any commercial purposes, any or all of the Produce KOL 练习生 Service, the use of the Produce KOL 练习生 Service, the access to the Produce KOL 练习生 Service including any logo, graphic, sound, image and articles whether posted by Produce KOL 练习生, other users of Produce KOL 练习生 Service or by Yourself. You shall not use the Produce KOL 练习生 Website to advertise or perform any commercial solicitation, including, but not limited to, the solicitation of users to become subscribers of other on-line information services competitive with the Produce KOL 练习生 Website.</p>
+           <p>3.12. The Produce KOL 练习生 Website contains copyrighted material, trademarks and other proprietary information, including, but not limited to, text, software, photos, video, graphics, music or sound, and the entire contents of the website are copyrighted as a collective or severable work under applicable copyright laws. Produce KOL 练习生 and/or the KOLS own or have acquired a copyright in the selection, coordination, arrangement and enhancement of such content, as well as in the content original to it.</p>
+           <p>3.13. You will abide by the specific rules of any competition or promotion that you participate in on or via the Produce KOL 练习生 Website. Unless we tell you otherwise, all prize draws and competitions offered via the Produce KOL 练习生 Website are not open to anyone outside Malaysia.</p>
+           <p>3.14. You will not do anything that affects the operability or security of the Produce KOL 练习生 Website or causes unreasonable inconvenience or offence or disruption to our staff.</p>
+           <p>3.15. You agree to comply with any contest or giveaway terms and conditions that are posted on the Produce KOL 练习生 Website. Participation in any such contest or giveaways shall be deemed agreement to such terms.</p>
+           <h4>4. USER GENERATED CONTENT</h4>
+           <p>4.1. User Generated Content are made available to You for Your information and personal use solely as intended through the normal functionality of the Produce KOL 练习生 Website. User Generated Content are made available on an "as is" basis, and may not be used, copied, reproduced, distributed, transmitted, broadcasted, displayed, sold, licensed, downloaded, or otherwise exploited in any manner not intended by the normal functionality of the Produce KOL 练习生 Website or otherwise as prohibited under these TOU.</p>
+           <p>4.2. As a User, You may be invited to post any User Generated Content in our Produce KOL 练习生 Website and You agree, by submitting Your User Generated Content, to grant Produce KOL 练习生 and KOLS a perpetual, royalty-free, non-exclusive, sub-licensable right and license to use, reproduce, edit, modify, adapt, publish, translate, create derivative works from, distribute, perform, play, make available to the public, and exercise all copyright and publicity rights with respect to Your User Generated Content worldwide and/or to incorporate Your User Generated Content in other works in any media, now known or later developed, for the full terms of any rights that may exist in Your User Generated Content, and in accordance with privacy restrictions set out in our Privacy Policy.</p>
+           <p>4.3. You also hereby grant each User of our Produce KOL 练习生 Website a non-exclusive license to access Your User Generated Content through the access and/or use of our Produce KOL 练习生 Website, and to use such User Generated Content only as permitted through the functionality of the Produce KOL 练习生 Website.</p>
+           <p>4.4. You understand and agree that Produce KOL 练习生 may retain and store, but not display or distribute server copies of the User Generated Content that has been removed or deleted. The above licenses granted to us, by You in User Generated Content, is irrevocable.</p>
+           <p>4.5. Further to the foregoing paragraph, by submitting Your User Generated Content in our Produce KOL 练习生 Website, You warrant that:-</p>
+           <p>1.	Your User Generated Content is Your own original work or You have the necessary license, rights, consents and permissions to use and authorize Produce KOL 练习生 to use all patent, trademark, trade secret, copyright or other proprietary rights in and to any and all User Generated Content to enable inclusion and use of the User Generated Content in the manner contemplated by this TOU and that You have the right to make it available to us for all the purposes specified above;</p>
+           <p>2.	Your User Generated Content is not defamatory, harmful, obscene, threatening, pornographic or otherwise illegal which would violate or infringe in any way upon Produce KOL 练习生’s rights or those of others (including intellectual property rights, rights of confidentiality, or rights of privacy) or cause distress or inconvenience. You must not express opinions that are crude, racist, sexist, vulgar, or otherwise offensive. Always treat other users with respect.</p>
+           <p>3.	You shall be solely responsible for Your User Generated Content and the consequences of posting or publishing them;</p>
+           <p>4.	You shall indemnify Produce KOL 练习生 against all legal fees, damages and other expenses that may be incurred by Produce KOL 练习生 as a result of Your breach of the above warranty; and</p>
+           <p>5.	You waive any moral rights in Your User Generated Content for the purposes of its submission to and publication in any of our KOLS platforms and the purposes specified above.
+            4.6. Produce KOL 练习生 does not endorse any User Generated Content or any opinion, recommendation, or advice expressed therein, and we expressly disclaim any and all liability in connection with User Generated Content. We do not permit activities which will infringe any intellectual property rights and will remove all infringing User Generated Content upon notification that such User Generated Content infringes on another's intellectual property rights. We further reserve the right to remove the User Generated Content without prior notice as stated in this TOU.
+            </p>
+            <p>4.7. You understand and agree that we may review and delete any User Generated Content that you post on our Produce KOL 练习生 Website at any time without notice, without liability and for any or no reason whatsoever. We may remove the User Generated Content from the Produce KOL 练习生 Website if, in our sole opinion, (1) the content violates this TOU; (2) the content might be offensive or illegal, or (3) the content might violate the rights of, harm, or threaten the safety of any other User or (4) we cancel or suspend the use of our Produce KOL 练习生 Website.</p>
+            <h4>5. TERMINATION/ACCESS RESTRICTION</h4>
+            <p>5.1. You may terminate and close your Produce KOL 练习生 ID by e-mailing Produce KOL 练习生 at enquiry@kols.com.my from the e-mail address provided by you the time you opened your Produce KOL 练习生 ID and created your e-mail address. Your e-mail must specify your e-mail address, and expressly state that you wish to terminate your Produce KOL 练习生 ID.</p>
+            <p>5.2. Without limiting anything herein contained, Produce KOL 练习生 reserves the right to cancel, withdraw, terminate or suspend your access to the Produce KOL 练习生 Website and your use of the Produce KOL 练习生 ID either in whole or in part for any reason whatsoever at its sole discretion at any time without notice to you and for any reason.</p>
+            <p>5.3. In addition to any termination rights Produce KOL 练习生 may have under this TOU, Produce KOL 练习生 may suspend or terminate your Produce KOL 练习生 ID and access to the Produce KOL 练习生 Website without notice and in its sole discretion if:</p>
+            <p>5.3.1. Produce KOL 练习生 suspects fraudulent use.</p>
+            <p>5.3.2. Your Produce KOL 练习生 ID is dormant for a period of six months or longer, as specified in Clause 2.3 above. Produce KOL 练习生 suspects fraudulent use of the Produce KOL 练习生 Website and/or your Produce KOL 练习生 ID and includes but is not limited to: (a) permitting access to your e-mail address and password to third parties, or (b) entering invalid or apparently invalid user information for your Produce KOL 练习生 ID, or (c) attempting to register for free, trial, or promotional offers under several aliases or with different user information to circumvent any one-trial-per-user limitation).</p>
+            <p>5.3.3. You materially violate this TOU posted from time to time on the Produce KOL 练习生 Website, any applicable law, rule or regulation relating to the use of the Produce KOL 练习生 Service.</p>
+            <p>5.3.4. Any law, regulation, or governmental action renders all or any portion of the Produce KOL 练习生 Website (or your use of the Produce KOL 练习生 Service) unlawful or impracticable.</p>
+            <p>5.3.5. Your use of your Produce KOL 练习生 ID or the Produce KOL 练习生 Website impairs or threatens to impair the integrity or functionality of the Produce KOL 练习生 network in any manner.</p>
+            <p>5.3.6. If Produce KOL 练习生 believes that you have violated or acted inconsistently with the letter or spirit of this TOU.</p>
+            <p>5.4. You agree that Produce KOL 练习生 shall not be liable to you or any third-party for any termination of your access to the Produce KOL 练习生 Website or your Produce KOL 练习生 ID and you hereby release Produce KOL 练习生 from any liability whatsoever.</p>
+            <h4>6. DISCLAIMER & LIMITATION OF LIABILITY.</h4>
+            <p>6.1. Produce KOL 练习生 makes no warranty that the Produce KOL 练习生 Website will meet your requirement or that the Produce KOL 练习生 Website will be secure, timely, uninterrupted or error free, or that any data, content, information, software or other material accessible on or through the Produce KOL 练习生 Website or your Produce KOL 练习生 ID are true, accurate, or are free of viruses or other harmful components. You are responsible for implementing sufficient procedures and checkpoints to satisfy your particular requirements for accuracy of data input and output, and for maintaining a means external to the Produce KOL 练习生 Website for the reconstruction of any lost data. All use of the Produce KOL 练习生 Website is at your own risk and you are solely responsible for all damages resulting there from.</p>
+            <p>6.2. The Produce KOL 练习生 Website is not intended for "mission critical" circumstances and is provided on an "as is," where is" and "as available" basis, without warranties of any kind, express or implied, including, but not limited to warranties of title, quiet enjoyment, non-infringement or implied warranties of merchantability or fitness for a particular purpose.</p>
+            <p>6.3. To the maximum extent permitted by applicable law, Produce KOL 练习生 disclaims all warranties, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, title and non-infringement with respect to the Produce KOL 练习生 Website and transactions performed through the service or on the Internet generally. Produce KOL 练习生 makes no representations or warranties as to the quality of the call or any connection to or any transmission over the Internet.</p>
+            <p>6.4. To the fullest extent permitted by applicable law, under no circumstances, including, but not limited to, negligence, shall Produce KOL 练习生 be liable for any direct, indirect, incidental, special or consequential, punitive or exemplary damages, damages for loss of profits (even if Produce KOL 练习生 has been advised of the possibility of such damages or even if such damage is foreseeable), suffered, incurred and/or sustained by You that result from the use of, access to or the inability to use the Produce KOL 练习生 Website, any changes to the Produce KOL 练习生 Website and unauthorized access to or alteration of your transmissions or data, any communication, transmission, material or data sent or received or not sent or received, or any transactions entered into through the Produce KOL 练习生 Website or arising in connection with the fraudulent or unlawful acts of any third party, whether such liability is asserted on the basis of contract, tort (including negligence or strict liability) or otherwise even if you have been advised of the possibility of such damages.</p>
+            <p>6.5. You specifically agree that Produce KOL 练习生 is not responsible or liable for any threatening, defamatory, obscene, offensive or illegal content or conduct of any other party or any infringement of another's rights, including intellectual property rights.</p>
+            <p>6.6. If you are dissatisfied with the Produce KOL 练习生 Website, the materials available on or through the Produce KOL 练习生 Service, Produce KOL 练习生 Website or with the provisions of this TOU, you agree that your sole and exclusive remedy is to discontinue using Produce KOL 练习生 Website or any of Produce KOL 练习生's other products and services.</p>
+            <p>6.7. Produce KOL 练习生 will take reasonable measures to maintain the privacy and security of all private information provided by you to the Produce KOL 练习生 Website, but third parties (such as hackers) may breach or attempt to breach Produce KOL 练习生's security measures or may gain unauthorized access to the Produce KOL 练习生 database or other equipment containing your information. You agree that KOLS shall not be liable for damages of any sort, whether arising under contract, tort, or otherwise, with respect to any breach of security of the Produce KOL 练习生 Website or any other company equipment or user information.</p>
+            <p>6.8. Any other warranties, disclaimers and limitation of liability for any Produce KOL 练习生 Services shall be set out separately for the respective Produce KOL 练习生 Services.</p>
+            <h4>7. INDEMNITY</h4>
+            <p>7.1. You agree to indemnify, defend and hold KOLS, its officers, directors, employees, agents, shareholders, licensors, suppliers and any third party information providers to the Produce KOL 练习生 Service and Website harmless from and against all losses, expenses, damages and costs, including attorneys' fees, resulting from (a) any violation by you of this TOU (b) Your use of or conduct or access to the Produce KOL 练习生 Website (c) Your violation of any third party right, including without limitation any copyright, property or privacy rights; or any claim that one of Your User Generated Content causes damage to a third party. This indemnification obligation by You will survive the TOU and Your use of the Produce KOL 练习生 Website.</p>
+            <p>7.2. The provisions of this paragraph are for the benefit of KOLS and its officers, directors, employees, agents, shareholders, licensors and suppliers to the Produce KOL 练习生 Website. Each of these individuals or entities shall have the right to assert and enforce these provisions directly against you on its own behalf.</p>
+            <h4>8. MONITORING</h4>
+            <p>8.1. KOLS shall have the right, but not the obligation, to monitor the Content of the Produce KOL 练习生 Website, all interactive communication including but not limited to chat rooms and forums, to determine compliance with this TOU established by KOLS and to satisfy any law, regulation or authorized government request. KOLS shall have the right in its sole discretion to edit, refuse to post or remove any material submitted to or posted on the Produce KOL 练习生 Website. Without limiting the foregoing, KOLS shall have the right to remove any material that KOLS, in its sole discretion, finds to be in violation of the provisions hereof or otherwise objectionable.</p>
+            <h4>9. BULLETIN BOARDS / MESSAGE BOARDS</h4>
+            <p>9.1. The Produce KOL 练习生 Website may include bulletin boards and chat rooms ("bulletin boards") which allow feedback to Produce KOL 练习生 and real-time interaction between users. Produce KOL 练习生 does not control the messages, information or files delivered to bulletin boards. It is a condition of Your use of the bulletin boards and the Produce KOL 练习生 Website that You observe the terms as stipulated in Clause 3 above.</p>
+            <h4>10. LINKS TO THIRD PARTY SITES</h4>
+            <p>10.1. The Produce KOL 练习生 Website and Applications may contain links to third party Web sites ("Linked Websites") and include advertisements. You agree that Linked Websites and advertisements are necessary for Produce KOL 练习生 to provide the Produce KOL 练习生 Service. Such links and advertisements are provided to you only as a convenience and as such KOLS does not provide any form of representation and/or warranty whether express or implied, for the use of such Linked Websites. KOLS shall not be responsible if the Linked Website is not working appropriately. KOLS has no control over such websites and resources and shall not be responsible for the contents of any Linked Website or advertisement, including without limitation any link contained in a Linked Website and does not endorse any content, advertising, products, or other materials on or available from such websites or resources. You are responsible for viewing and abiding by the privacy statements and terms of use posted at the Linked Websites, and for taking precaution to ensure that whatever you select for your use is free of viruses, worms, trojan horses and other items of a destructive nature. By using the Produce KOL 练习生 Website You expressly relieve us from any liability arising from Your use of and Linked Websites.</p>
+            <p>10.2. Any dealings with third parties (including advertisers) over the Linked Websites or participation in promotions, including the delivery of and the payment for goods and services, and any other terms, conditions, warranties or representations associated with such dealings or promotions, are solely between you and the advertiser, merchant or other third party. You agree that KOLS shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such website or resource. The purchase of any product or service from a merchant from a Linked Website is a transaction solely between you and that merchant, and any question or dispute you may have regarding any such product or service should be addressed directly to the responsible merchant. KOLS has no responsibility or liability for any merchant or your relationship with such merchant.</p>
+            <h4>11. DISCLOSURE AND CONFIDENTIALITY</h4>
+            <p>11.1. KOLS reserves the right to disclose any personal information about you or your use of the Produce KOL 练习生 Service and without your prior permission if KOLS in good faith, believes that such action is necessary to: (1) conform to legal requirements or comply with legal process; (2) protect and defend the rights or property of KOLS or its holding or affiliated company; (3) enforce this TOU; or (4) act to protect the interests of its members or others.</p>
+            <p>11.2. Any non-personal information or material sent to KOLS by you will generally NOT be treated as confidential.</p>
+            <p>11.3. For further details on use and disclosure of your personal information please see our Privacy Policy.</p>
+            <h4>12. PROPRIETORY RIGHTS</h4>
+            <h5>COPYRIGHT</h5>
+            <p>12.1. The Produce KOL 练习生 Website and all Content found on the Produce KOL 练习生 Website are protected by trademark, copyright, or other intellectual property laws and international treaties. Any unlawful use of the Produce KOL 练习生 Website and Content found on the Produce KOL 练习生 Website is strictly prohibited, without KOLS's express and prior written consent. The Produce KOL 练习生 Website and Produce KOL 练习生 Services is intended only for personal viewing and that any reproduction or redistribution of any form or format of the Produce KOL 练习生 Website, Produce KOL 练习生 Service and Content or any part thereof whether for commercial reasons or otherwise is strictly prohibited by this TOU , and may result in severe civil and criminal penalties.</p>
+            <p>12.2. Elements of the Produce KOL 练习生 Website, its design and layout are protected by trade dress and other laws and may not be copied or imitated in whole or in part.</p>
+            <p>12.3. No logo, graphic, sound or image from this Produce KOL 练习生 Website may be copied or retransmitted unless expressly permitted by KOLS.</p>
+            <h4>GRANT OF LICENSE AND RESTRICTIONS</h4>
+            <p>12.4. You acknowledge and agree that the Produce KOL 练习生 Website and any necessary Software used in connection with the KOL 练习生Produce Website contain proprietary and confidential information that is protected by applicable intellectual property and other laws. KOLS reserves all rights in the not expressly granted herein, including without limitation ownership and proprietary rights.</p>
+            <p>12.5. The Software is made available for downloading solely for use by you for your individual, non-transferable, non-exclusive and non-commercial use, use in connection with Produce KOL 练习生 Service. The Software is made available solely for use by you in accordance with the terms of this TOU and the terms of any License Agreement which accompanies or is included with the Software. You may not install or use any part of the Software unless you first agree to the terms of this TOU and any License Agreement. The Software is "in use" on a computer when it is loaded into the temporary memory (i.e. RAM) or installed into the permanent memory (e.g., hard disk, CD-ROM, or other storage device) of that computer or accessed from a Device to Software that is on the cloud.</p>
+            <p>12.6. You may not copy the Software to any other server or location for further reproduction or redistribution. You may not reverse engineer, decompile, disassemble or modify the Software, except insofar as such restriction is prohibited by law.</p>
+            <p>12.7. Any reproduction or redistribution of the Software not in accordance with this TOU and any License Agreement is expressly prohibited by law, and may result in severe civil and criminal penalties. Violators will be prosecuted to the maximum extent possible.</p>
+            <p>12.8. Without limiting the provisions of Clause 6 above, the Software is provided "as is," and KOLS hereby disclaims all warranties and conditions with regard to the Software, including all implied warranties and conditions of merchantability, fitness for a particular purpose, title and non-infringement.</p>
+            <h4>TRADEMARKS AND THIRD PARTY MATERIALS.</h4>
+            <p>12.9. KOLS reserves all rights in its corporate names, service marks, logos, trade names, trademarks, websites and domain names (collectively "Marks") and nothing in this TOU grants you the license to use such Marks. Additionally, other marks which appear on this site may be marks of third parties that are not affiliated with KOLS. Produce KOL 练习生 and the KOLS do not control or endorse the content of third party websites.</p>
+            <p>12.10. The Contents provided on the Produce KOL 练习生 Website may contain materials made available by third parties ("Third Party Content"). Produce KOL 练习生 and KOLS shall not guarantee the accuracy, completeness or usefulness of any of such Third Party Content and You agree that by perusing such Third Party Content, You shall assume all risk associated with the perusal of such Third Party Content.</p>
+            <p>12.11. From time to time the Content available through the Produce KOL 练习生 Website may contain judgments or opinions of the respective user or Third Party Content provider not associated with KOLS. KOLS neither endorses nor is responsible for the reliability or accuracy of any advice, statement or opinion made on the Produce KOL 练习生 Website by any third party. Under no circumstances will Produce KOL 练习生 or KOLS be liable for any losses or damages caused by Your use or reliance of such Third Party Content obtained through the Produce KOL 练习生 Website.</p>
+            <h4>13. APPLICATION AND VIDEO PLAYER USE</h4>
+            <p>13.1. Certain Produce KOL 练习生 Services can be accessed via an Application or Video Player and may have additional terms of use in addition to this TOU. The additional terms shall apply to those respective Produce KOL 练习生 Services and wherever there is conflict of terms those additional terms shall prevail and govern.</p>
+            <p>13.2. The Content accessed via the App or Video Player are provided by KOLS and/or its content providers that you may download or stream to your Device which is equipped with the necessary functions or applications to support the Content to be downloaded or streamed. We advise you to check with your respective mobile phone operator or internet service provider on whether your Device can support or is compatible to download, view and stream the Content.</p>
+            <p>13.3. You agree that you will be subject to an additional premium charges for any mobile downloads or streaming services made available on the App or Video Player. Such charges shall be made known to you from time to time. You will be charged accordingly with the charges for the downloads or Streaming when a request is made even if the download or Streaming is incomplete.</p>
+            <p>13.4. The charges stipulated in Clause 13.2 will be in addition to the fee charged by your mobile phone or internet operator.</p>
+            <p>13.5. KOLS will not be responsible or liable for any problem, loss or damage of whatsoever nature suffered by you due to any delay and/or failure in receiving and sending a message as a result of any network, communication or system error, interruption and/or failure experienced by the participating mobile phone operators and/or by KOLS and/or resulting from participation or the downloading of any materials from the Apps or Video Player.</p>
+            <p>13.6. You agree that for the downloads to be downloaded successfully to your Device, your Device must be compatible with and supports the downloaded item. KOLS shall not be liable should you attempt to download an item onto an incompatible Device and you agree that the charges stated in Clause 13.2 above shall still apply under such circumstances.</p>
+            <p>13.7. If you are under the age of eighteen (18), you must seek parental and/or guardian approval before using any of the Produce KOL 练习生 Services, the Apps or Video Player. KOLS considers it the responsibility of parents and/or guardian to monitor their children(s) use of the Produce KOL 练习生 Services and Apps.</p>
+            <h4>14. GENERAL</h4>
+            <p>14.1. This TOU are governed by the laws of Malaysia, without reference to conflict of laws principles. Any dispute between you and KOLS regarding this TOU will be subject to the exclusive jurisdiction of the courts located in Malaysia and you expressly waive all defenses to jurisdiction. You agree that the Produce KOL 练习生 Website shall, for the purpose of determining jurisdiction and applicable law, be deemed to have originated and been provided by KOLS in and from Malaysia.</p>
+            <p>14.2. This TOU contain the entire understanding between the parties hereto with respect to the Produce KOL 练习生 Website, and supersedes all previous oral or written agreements or understandings between you and Produce KOL 练习生, and no advice or information, whether oral or written, obtained by you from this Produce KOL 练习生 Website (whether before or after the date you accept this TOU) shall create any obligation or warranty on the part of KOLS not expressly stated herein. You may also be subject to additional terms and conditions that may apply when you use any services offered by the KOLS, third-party content or third-party software. Neither the course of conduct between the parties nor trade practice shall act to modify any provision of this TOU.</p>
+            <p>14.3. KOLS's performance of this TOU is subject to existing laws and legal process, and nothing contained in this TOU is in derogation of KOLS's right and obligation to comply with governmental, court and law enforcement requests or requirements relating to your use of the Produce KOL 练习生 Website or information provided to or gathered by KOLS with respect to such use.</p>
+            <p>14.4. If any provision of this TOU is held invalid, the remainder of this TOU will continue in full force and effect, and If any provision(s) of the TOU is held by a court of competent jurisdiction to be contrary to law, then such provision(s) shall be construed, as nearly as possible, to reflect the intentions of the parties with the other provisions remaining in full force and effect. This TOU shall not be construed against any party as the principal draftsperson hereof. A printed version of this TOU and of any notice given in electronic form shall be admissible in judicial or administrative proceedings.</p>
+            <p>14.5. KOLS's failure to insist upon or enforce strict performance of any provision of this TOU shall not be construed as a waiver of any provision or right unless acknowledged and agreed to by KOLS in writing.</p>
+            <p>14.6. Notices to you shall not be modified, except by an express modification by KOLS as described herein and may be made via either email or regular mail or by displaying notices or links to notices to you generally on the Produce KOL 练习生 Service.</p>
+            <p>14.7. KOLS reserves the right to amend any of the provisions of this TOU from time to time. Amendments will be effective immediately upon notification on the Produce KOL 练习生 Website. Your continued use of the Produce KOL 练习生 Website and participation of, the Produce KOL 练习生 Services, will represent an agreement by you to be bound by this TOU as amended.</p>
+            <p>14.8. You may not assert any claim against KOLS in connection with the Produce KOL 练习生 Website unless you have given KOLS written notice of the claim within fourteen (14) days after you knew or should have known of the facts giving rise to such claim. You agree that any cause of action arising out of or related to the Produce KOL 练习生 Website must commence within one (1) year after the cause of action arose; otherwise, such cause of action is permanently barred.</p>
+            <p>14.9. KOLS may assign its rights and duties under this TOU to any party at any time without notice to you and this TOU shall be binding upon and inure to the benefit of each party's respective permitted successors and assignees.
+               Should you have any questions concerning this TOU, or if you desire to contact KOLS for any reason, please e-mail KOLS at enquiry@kols.com.my.</p>
+
+         </form>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </section>
+         <!--End about section-->
+         <!--Discography section-->
+         <!--Divider section-->
+         <!--End band members section-->
+         <!--Tours section-->
+         <!--Gallery section-->
+         <!--End gallery section-->
+         <!--News section-->
+         <!--End news section-->
+         <!--Twitter section-->
+         <!--End twitter section-->
+         <!--Contact section-->
+         <section id="contact" class="contact main bg-secondary">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+                  <img src="../assets/img/sponsorbk.png" alt="" style="width:100%; margin:auto; margin-bottom:40px">
+               <div class="row justify-content-center ">
+                  <div class="col-12 col-md-10 col-lg-9">
+
+                     <div class="block-content  gap-one-bottom-md text-center">
+                        <div class="block-title ">
+                           <h1 class="uppercase">stay in touch</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-12 col-lg-10">
+                     <ul class="feature-list feature-list-sm text-center row">
+                        <li class="col-md-6  col-lg-4">
+                           <div class="card text-center" >
+                              <div class="card-body">
+                                 <h2 class="uppercase ">Booking</h2>
+                                 <p class="mb-0"><em class="uppercase h5 opc-70">Benaissa Ghrib</em>
+                                    T+(513)352-3209<br>
+                                    booking@mousiqua.net
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="col-md-6  col-lg-4">
+                           <div class="card text-center">
+                              <div class="card-body">
+                                 <h2 class="uppercase">Press</h2>
+                                 <p class="mb-0"><em class="uppercase h5 opc-70">Zakaria Kalal</em>
+                                    T+(513)352-3209<br>
+                                    press@mousiqua.net
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="col-md-6  col-lg-4">
+                           <div class="card text-center">
+                              <div class="card-body">
+                                 <h2 class="uppercase ">info</h2>
+                                 <p class=" mb-0"><em class="uppercase h5 opc-70">Youssef Ait</em>
+                                    T+(513)352-3209<br>
+                                    info@mousiqua.net
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="row justify-content-center">
+                  <div class="col-12">
+                     <ul class="block-social list-inline text-center mt-4">
+                        <li class="list-inline-item">
+                           <a href="#"> <i class="socicon-facebook"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#"><i class="socicon-instagram"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#"><i class="socicon-youtube"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#"><i class="socicon-apple"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#"><i class="socicon-android"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!--End container-->
+         </section>
+         <!--End contact section-->
+         <footer class="pt-5 pb-5 footer">
+            <!--Container-->
+            <div class="container">
+               <div class="row justify-content-between align-items-center">
+                  <div class="col-md-6">
+                     <small class="small"><span>&copy; 2019 all rights reserved - Produce KOLS Sdn Bhd.</span> Website powered by Unidots Asia.</small>
+                  </div>
+                  <div class="col-md-6 text-md-right">
+                     <ul class="list-inline small">
+                        <li class="list-inline-item">
+                           <a href="#">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#">Terms of Use</a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#">About</a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#">Legal</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!--End container-->
+         </footer>
+         <a class="block-top scroll" href="#wrapper">
+         <i class="icon-angle-up"></i></a>
+      </div>
+      <!-- End wrapper-->
+      <!--Javascript-->
+      <script src="js/jquery-1.12.4.min.js"></script>
+      <script src="js/jquery.flexslider-min.js"></script>
+      <script src="js/smooth-scroll.js" ></script>
+      <script src="js/jquery.magnific-popup.min.js" ></script>
+      <script src="js/audio.min.js" ></script>
+      <script src="js/twitterFetcher_min.js" ></script>
+      <script src="js/jquery.countdown.min.js" ></script>
+      <script src="js/placeholders.min.js"></script>
+      <script src="js/script.js"></script>
+
+<script src="js/angular/angular.js"></script>
+<script src="js/angular/angular-route.js"></script>
+<script src="js/angular/jquery.dataTables.min.js"></script>
+<script src="js/angular/dataTables.semanticui.min.js"></script>
+<script src="js/angular/angular-datatables.min.js"></script>
+  <script src="js/angular/semantic.js"></script>
+<script src="js/angular/ignite.js"></script>
+<script src="js/angular/context.js"></script>
+      <!-- Google analytics -->
+      <!-- End google analytics -->
+   </body>
+</html>

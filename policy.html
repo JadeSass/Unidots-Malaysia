@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Metas -->
+      <meta charset="utf-8">
+      <title>KOL Influencers</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Css -->
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/flexslider.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="css/magnific-popup.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
+          <link href="css/semantic.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="http://fonts.googleapis.com/css?family=Dosis:100,300,400,600,700" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,300,400,400i,600,700,800" rel="stylesheet">
+   </head>
+   <body ng-app="igniteApp" ng-controller="registerCtrl">
+      <!-- Preloader -->
+      <div class="loader">
+         <!-- Preloader inner -->
+         <div class="loader-inner">
+            <svg width="120" height="220" viewbox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
+               <circle class="spinner" cx="50" cy="50" r="21" fill="#13181d" stroke-width="2"/>
+            </svg>
+         </div>
+         <!-- End preloader inner -->
+      </div>
+      <!-- End preloader-->
+      <!--Wrapper-->
+      <div class="wrapper">
+         <div class="block-search-form">
+            <div class="block-content">
+               <div class="container">
+                  <!--end of row-->
+                  <div class="row justify-content-center">
+                     <div class="col-12 col-md-10 col-lg-8">
+                        <form method="get"  >
+                           <div class="card  bg-red ">
+                              <div class="card-body  row no-gutters align-items-center">
+                                 <div class="col-auto">
+                                    <i class="icon-search"></i>
+                                 </div>
+                                 <!--end of col-->
+                                 <div class="col">
+                                    <input class="form-control form-control-lg form-control-border0" placeholder="Type a keywords..." type="search">
+                                 </div>
+                                 <!--end of col-->
+                                 <div class="col-auto">
+                                    <button type="submit" class="btn  btn-primary uppercase border-3">
+                                    Search now</button>
+                                 </div>
+                                 <!--end of col-->
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                     <!--end of col-->
+                  </div>
+                  <!--end of row-->
+               </div>
+            </div>
+         </div>
+         <!--Hero section-->
+         <header class="header default">
+            <div class=" left-part">
+               <a class="logo scroll" href="#wrapper">
+                  <img src="../assets/img/logo.png" style="width:80px; padding-top:15px"/>
+               </a>
+            </div>
+            <div class="right-part">
+               <nav class="main-nav">
+                  <div class="toggle-mobile-but">
+                     <a href="#" class="mobile-but" >
+                        <div class="lines"></div>
+                     </a>
+                  </div>
+                  <ul class="main-menu list-inline">
+                     <li><a class="scroll list-inline-item" href="/register.html" style="font-size:14px">Register</a></li>
+                     <li><a class="scroll list-inline-item" href="#about" style="font-size:14px">Login</a></li>
+
+
+                     </li>
+
+
+
+                     </li>
+                     <li>
+
+                  </ul>
+               </nav>
+            </div>
+         </header>
+
+         <section id="about" class="about main">
+            <div class="background-img" >
+               <img  src="img/25.jpg" alt="">
+            </div>
+            <!--Container-->
+            <div class="container" >
+               <!--Row-->
+               <div class="row">
+
+                  <div class="col-lg-12" style="margin-top:10px">
+                    <form class="ui inverted responsive form " style="padding:10px" id="form1">
+                  <div class="ui negative message" ng-show="hasError">
+  <div class="uiheader">Registration failed</div>
+  <p ng-repeat="err in Error">{{err.reason}}</p>
+</div>
+
+<div class="ui positive message" ng-show="registrationSuccess">
+<div class="uiheader">registration successful</div>
+<p >Registration completed, please check your email you will be informed of the audition process</p>
+</div>
+
+
+    <h1 class="uppercase text-white">Privacy Policy</h1>
+        <div class="field text-white">
+           <h4>Thank you for using KOLS website and App!</h4>
+           <p>This Privacy Notice outlines how KOLS Sdn Bhd collects, uses, maintains and discloses your personal data only where we have a proper legal basis for doing so and how KOLS Sdn Bhd safeguards the personal data.</p>
+           <b>"KOLS Sdn Bhd " or "We" in this Privacy Notice refers to KOLS Sdn Bhd ("KOLS").</b>
+           <h4>Your consent is important</h4>
+           <p>When you request information or sign up for our products, services, and program, you may be required to provide KOLS with your personal data. In doing so, you consent to its use by KOLS in accordance with this Privacy Notice. Your personal data may have otherwise been provided to the KOLS by a third party (for example your spouse, a company in which you are a director, an officer or a shareholder, or a partnership in which you are a partner) for products, services or programs that these third parties have sought from the KOLS on pursuant to commercial transaction entered into with KOLS. In this context, the term "you" or "your" in this Privacy Notice extends to any individual whose personal data has been provided to the KOLS and/or has been collected in other circumstances as described in Section 3 of this Privacy Notice.</p>
+
+           <p>You have the choice, at any time, not to provide your personal data/sensitive personal data or to revoke your consent to KOLS processing of your personal data/sensitive personal data. However, failure to provide such personal data/sensitive personal data or revocation of your consent to process personal data/sensitive personal data provided may result in KOLS being unable to provide you with effective and continuous products, services and programs.</p>
+           <h4>What types of personal data do we collect?</h4>
+           <p>Personal data refers to any information that relates directly or indirectly to an individual, who is identified or identifiable from that information or from that and other information in the possession of KOLS, including any sensitive personal data and expression of opinion, video recordings, and audio recordings about the individual.</p>
+           <p>The types of personal data we collect may include but are not limited to your name, address, other contact details, age, occupation, marital status, your identity card or passport, place of birth, your social media accounts. If you purchase something on KOLS website or app, we collect payment information.</p>
+           <p>The personal data we collect can be either obligatory or voluntary. Obligatory personal data are those that we require in order to provide you with our products, services, and programs If you do not provide us with obligatory personal data, we would not be able to provide you with our products, services, and programs. Voluntary personal data are those that are not mandatory in order for us to provide you with our products, services, and programs. If you do not provide us with voluntary personal data, you can still sign up for our products, services, and programs. Obligatory and voluntary personal data differ for each product, services, and programs and will be indicated in the application forms either through hard copy or soft copy.</p>
+           <h4>How do we collect your personal data?</h4>
+           <p>We obtain your personal data in various ways, such as:</p>
+
+              <li>When you sign up for or use one of the many services we provide or when you register an account at any KOLS websites; and/or</li>
+              <li>When you contact the KOLS through various methods such as application forms, emails and letters, social media accounts, mobile applications, telephone calls and conversations you have with our staff.</li>
+              <li>We may also obtain your personal data when you participate in customer surveys or when you sign up for any of our competitions or promotions; and/or</li>
+              <li>When we obtain any data and information from third parties (e.g. credit reference agencies, regulatory and enforcement agencies, employers, joint account holders, guarantors, legal representatives, spouses, parents, guardians, dependents and/or companies/partnership that you hold directorships, shareholdings or partnership in); and/or</li>
+              <li>When you enter into any commercial transactions with the KOLS including but not limited to you providing goods and/or services or your professional services; and/or</li>
+              <li>From publicly available sources.</li>
+              <p>Personal data we collect from our websites and mobile application</p>
+              <h4>IP Address</h4>
+              <p>
+                  An IP address is a number that is automatically assigned to your computer when you signed up with an Internet Service Provider. When you visit our website, your IP address is automatically logged into our server. We use your IP address to help diagnose problems with our server and to administer our website. From your IP address, we may identify the general geographic area from which you are accessing our website. Generally we do not link your IP address to anything that can enable us to identify you unless it is required by law and regulation.
+                  </p>
+               <h4>Cookies</h4>
+               <p>A cookie is an element of data that a website can send to your browser, which may then store it on your system. We use cookies in some of our pages to store visitors' preferences and record session information. The information that we collect is then used to ensure a more personalized service level for our users. You can adjust settings on your browser so that you will be notified when you receive a cookie. Please refer to your browser documentation to check if cookies have been enabled on your computer or to request not to receive cookies.</p>
+               <h4>Device information</h4>
+               <p>A cookie is an element of data that a website can send to your browser, which may then store it on your system. We use cookies in some of our pages to store visitors' preferences and record session information. The information that we collect is then used to ensure a more personalized service level for our users. You can adjust settings on your browser so that you will be notified when you receive a cookie. Please refer to your browser documentation to check if cookies have been enabled on your computer or to request not to receive cookies.
+               </p>
+               <h4>What is the purpose of processing your personal data?</h4>
+               <p>We may process your personal data for the following reasons:</p>
+               <li>To assess your application for any of our products and services; and/or</li>
+               <li>To manage and maintain your account and facility; and/or</li>
+               <li>To respond to your inquiries and complaints and to resolve disputes; and/or</li>
+               <li>For internal functions such as evaluating the effectiveness of marketing, market research, statistical analysis, and modeling, reporting, audit, and risk management; and/or</li>
+               <p>In addition, we may also use your personal data for the fulfillment of any regulatory requirements and for any other reasons connected with providing you the services you require and fulfillment of any commercial transactions entered into by you with the KOLS.</p>
+               <p>From time to time, we may share your personal data with other entities within KOLS, our agents or subject to your consent, strategic partners with whom we have a relationship with for specific products and services ("Other Entities") as KOLS deems fit and you may receive marketing communication from us or from these other entities about products, services, and programs that may be of interest to you. If you no longer wish to receive these marketing communications, please notify us to withdraw your consent and we will stop processing and sharing your personal data with these other entities for the purpose of sending you marketing communications.</p>
+               <p>You have a choice to withdraw your consent for receiving marketing or promotional materials/communication, you may contact us using the contact details found below. Please be aware that once we receive confirmation that you wish to withdraw your consent for marketing or promotional materials/communication, it may take up to fourteen (14) working days for your withdrawal to be reflected in our systems. Therefore, you may still receive marketing or promotional materials/communication during this period of time. Please note that even if you opt-out from receiving marketing or promotional materials, KOLS may still contact you for other purposes in relation to the accounts, facilities or services that you hold or have subscribed to with KOLS.</p>
+               <h4>To whom do we disclose your personal data?</h4>
+               <p>Your personal data held by us shall be kept confidential. However, in order to provide you with effective and continuous products and services and subject at all times to any laws (including regulations, standards, guidelines and/or obligations) applicable to financial institutions, we may need to disclose your personal data to:</p>
+               <li>Other Entities within KOLS; and/or</li>
+               <li>Our partners and service providers with whom we have contractual agreements for some of our functions, services, and activities; and/or</li>
+               <li>Strategic partners with whom we have a relationship with for specific products and services if consented to, by you; and/or</li>
+               <li>Parties authorized and consented to, by you; and/or</li>
+               <li>Enforcement regulatory and governmental agencies as permitted or required by law, authorized by any court order or to meet obligations to regulatory authorities.</li>
+               <p>The disclosure of your data may involve the transfer of your personal data to places outside of Malaysia, and by providing us your personal data you agree to such a transfer where it is required to provide you the services you have requested, and for the performance of any contractual obligations you have with KOLS including for storage purposes.</p>
+               <h4>How do we protect your data?</h4>
+               <p>The security of your personal data is our priority. KOLS takes all physical, technical and organizational measures needed to ensure the security and confidentiality of personal data. If we disclose any of your personal data to our authorized agents or service providers, we will require them to appropriately safeguard the personal data provided to them.</p>
+               <h4>How long may we retain your personal data?</h4>
+               <p>We will only retain your personal data for as long as necessary to fulfill the purpose(s) for which it was collected or to comply with legal, regulatory and internal requirements. Afterward, we will destruct or permanently delete your data</p>
+               <h4>Changes to this Privacy Notice</h4>
+               <p>Please note that we may update this Privacy Notice from time to time. If there are material changes to this Privacy Notice, we will notify you by posting a notice of such changes on our website or by sending you a notification directly. Do periodically review this Privacy Notice to stay informed on how we are protecting your information.</p>
+               <h4>How can you access / correct / update your personal data?</h4>
+               <p>We are committed to ensuring that the personal data we hold about you is accurate, complete, not misleading and up-to-date. If there are any changes to your personal data or if you believe that the personal data we have about you is inaccurate, incomplete, misleading or not up-to-date, please contact us so that we may take steps to update your personal data. You may also update your personal data yourself though KOLS mobile application and website.</p>
+               <p>You have the right to access your personal data. If you would like to request access to your personal data, please contact us. We may also take steps to verify your identity before fulfilling your request for access to your personal data.</p>
+
+         </form>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </section>
+         <!--End about section-->
+         <!--Discography section-->
+         <!--Divider section-->
+         <!--End band members section-->
+         <!--Tours section-->
+         <!--Gallery section-->
+         <!--End gallery section-->
+         <!--News section-->
+         <!--End news section-->
+         <!--Twitter section-->
+         <!--End twitter section-->
+         <!--Contact section-->
+         <section id="contact" class="contact main bg-secondary">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+                  <img src="../assets/img/sponsorbk.png" alt="" style="width:100%; margin:auto; margin-bottom:40px">
+               <div class="row justify-content-center ">
+                  <div class="col-12 col-md-10 col-lg-9">
+
+                     <div class="block-content  gap-one-bottom-md text-center">
+                        <div class="block-title ">
+                           <h1 class="uppercase">stay in touch</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-12 col-lg-10">
+                     <ul class="feature-list feature-list-sm text-center row">
+                        <li class="col-md-6  col-lg-4">
+
+                        </li>
+                        <li class="col-md-6  col-lg-4">
+                           <div class="card text-center" >
+                              <div class="card-body">
+                                 <h2 class="uppercase ">Contact us</h2>
+                                 <p class="mb-0"><em class="uppercase h5 opc-70">Address: 2-68, Second Floor, Viva Shopping Mall,
+85, Jalan Loke Yew, 55200 Kuala Lumpur.</em>
+                                    +603 2732 7759 / 58<br>
+                                    enquiry@kols.com.my
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="col-md-6  col-lg-4">
+                           
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="row justify-content-center">
+                  <div class="col-12">
+                     <ul class="block-social list-inline text-center mt-4">
+                        <li class="list-inline-item">
+                           <a href="#"> <i class="socicon-facebook"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#"><i class="socicon-instagram"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#"><i class="socicon-youtube"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#"><i class="socicon-apple"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#"><i class="socicon-android"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!--End container-->
+         </section>
+         <!--End contact section-->
+         <footer class="pt-5 pb-5 footer">
+            <!--Container-->
+            <div class="container">
+               <div class="row justify-content-between align-items-center">
+                  <div class="col-md-6">
+                     <small class="small"><span>&copy; 2019 all rights reserved - Produce Kol is trademarks of KOLS Sdn Bhd. Website powered by Unidots Asia</small>
+                  </div>
+                  <div class="col-md-6 text-md-right">
+                     <ul class="list-inline small">
+                        <li class="list-inline-item">
+                           <a href="#">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#">Terms of Use</a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#">About</a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#">Legal</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!--End container-->
+         </footer>
+         <a class="block-top scroll" href="#wrapper">
+         <i class="icon-angle-up"></i></a>
+      </div>
+      <!-- End wrapper-->
+      <!--Javascript-->
+      <script src="js/jquery-1.12.4.min.js"></script>
+      <script src="js/jquery.flexslider-min.js"></script>
+      <script src="js/smooth-scroll.js" ></script>
+      <script src="js/jquery.magnific-popup.min.js" ></script>
+      <script src="js/audio.min.js" ></script>
+      <script src="js/twitterFetcher_min.js" ></script>
+      <script src="js/jquery.countdown.min.js" ></script>
+      <script src="js/placeholders.min.js"></script>
+      <script src="js/script.js"></script>
+
+<script src="js/angular/angular.js"></script>
+<script src="js/angular/angular-route.js"></script>
+<script src="js/angular/jquery.dataTables.min.js"></script>
+<script src="js/angular/dataTables.semanticui.min.js"></script>
+<script src="js/angular/angular-datatables.min.js"></script>
+  <script src="js/angular/semantic.js"></script>
+<script src="js/angular/ignite.js"></script>
+<script src="js/angular/context.js"></script>
+      <!-- Google analytics -->
+      <!-- End google analytics -->
+   </body>
+</html>

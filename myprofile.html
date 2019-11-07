@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metas -->
+  <meta charset="utf-8">
+  <title>KOL Influencers</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Css -->
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/base.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/semantic.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="http://fonts.googleapis.com/css?family=Dosis:100,300,400,600,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,300,400,400i,600,700,800" rel="stylesheet">
+</head>
+
+<body ng-app="igniteApp" ng-controller="MyprofileCtrl">
+  <!-- Preloader -->
+  <div class="loader">
+    <!-- Preloader inner -->
+    <div class="loader-inner">
+      <svg width="120" height="220" viewbox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="spinner" cx="50" cy="50" r="21" fill="#13181d" stroke-width="2" />
+      </svg>
+    </div>
+    <!-- End preloader inner -->
+  </div>
+  <!-- End preloader-->
+  <!--Wrapper-->
+  <div class="wrapper">
+    <div class="block-search-form">
+      <div class="block-content">
+
+        <div class="container ">
+          <!--end of row-->
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+              <form method="get">
+                <div class="card  bg-red ">
+                  <div class="card-body  row no-gutters align-items-center">
+                    <div class="col-auto">
+                      <i class="icon-search"></i>
+                    </div>
+                    <!--end of col-->
+                    <div class="col">
+                      <input class="form-control form-control-lg form-control-border0" placeholder="Type a keywords..." type="search">
+                    </div>
+                    <!--end of col-->
+                    <div class="col-auto">
+                      <button type="submit" class="btn  btn-primary uppercase border-3">
+                        Search now</button>
+                    </div>
+                    <!--end of col-->
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!--end of col-->
+          </div>
+          <!--end of row-->
+        </div>
+      </div>
+    </div>
+    <!--Hero section-->
+    <header class="header default">
+      <div class=" left-part">
+        <a class="logo scroll" href="#wrapper">
+          <img src="../assets/img/logo.png" style="width:80px; padding-top:15px" />
+        </a>
+      </div>
+      <div class="right-part">
+        <nav class="main-nav">
+          <div class="toggle-mobile-but">
+            <a href="#" class="mobile-but">
+              <div class="lines"></div>
+            </a>
+          </div>
+          <ul class="main-menu list-inline">
+            <li><a class="scroll list-inline-item" style="font-size:14px" ng-click="logout()">Logout</a></li>
+
+
+            </li>
+
+
+
+            </li>
+            <li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about" class="about main">
+      <div class="background-img overlay zoom">
+        <img src=" img/44.jpg" alt="">
+      </div>
+
+      <!--Container-->
+      <div class="container">
+        <!--Row-->
+        <div class="row  vertical-align">
+
+
+          <div class="col-lg-5 col-md-12">
+            <div class="profileimage">
+              <img src="https://kols-ignite-multimedia.s3-ap-southeast-1.amazonaws.com/profileimages/{{user.profileimage}}" alt="" style="width:100%; height:100%; margin:auto">
+            </div>
+
+          </div>
+          <div class="col-lg-7" style="margin-top:10px">
+            <h1 class="uppercase text-white">{{user.fullname}}</h1>
+            <p class=" w-100" >
+              <ol style="color:#f6f6f6; font-size:14px; font-weight:bold">
+
+                 <li value="">KOL Id : {{user.kolid}}</li>
+       <li value="">Nickname : {{user.artistname}}</li>
+       <li value="">Address : {{user.address}}</li>
+       <li value="">Nationality : {{user.nation_others}}</li>
+       <li value="">Audition : {{user.auditionlocation}}</li>
+          <li value="">Email : {{user.email}}</li>
+             <li value="">Phone number : {{user.phonenumber}}</li>
+            
+     </ol>
+   </p>
+              <div class="ui fluid button" ng-click="logout()" style="height:60px;font-weight:bold;  background:#DC424B;color:white; line-height: 30px;text-align: center;font-size:16px">Log Out</div>
+
+          </div>
+
+        </div>
+        <!--End row-->
+      </div>
+      <!--End container-->
+    </section>
+    <!--End about section-->
+    <!--Discography section-->
+    <!--Divider section-->
+    <!--End band members section-->
+    <!--Tours section-->
+    <!--Gallery section-->
+    <!--End gallery section-->
+    <!--News section-->
+
+    <section id="about" class="about main">
+      <div class="background-img overlay zoom">
+        <img src=" img/44.jpg" alt="">
+      </div>
+
+      <!--Container-->
+      <div class="container">
+        <!--Row-->
+        <div class="row  vertical-align">
+
+
+          <div class="col-lg-10" >
+            <div class="ui top attached tabular menu inverted">
+              <a class="item active" data-tab="first">Result</a>
+              <a class="item" data-tab="second">Event schedule</a>=
+            </div>
+            <div class="ui bottom attached tab inverted segment active" data-tab="first">
+              <h5 style="font-size:14px; font-weight:bold;" ng-hide="resultsIn">Audition Queue : <span>your are number {{queueposition}} in line</span></h5>
+              <h4 style="font-size:14px;" class="ui dividing inverted uiheader" ng-hide="resultsIn">Result box : Results are pending</h4>
+                <h4 style="font-size:14px;" ng-show="resultsIn" class="ui dividing inverted uiheader" >Result box</h4>
+              <div class="resultBox " ng-show="resultsIn" id="resultBox">
+
+              </div>
+
+            </div>
+            <div class="ui bottom attached tab inverted segment" data-tab="second">
+              <div class="block-content gap-one-top-sm text-left">
+                 <div class="block-content ">
+                   <div class="row">
+                      <div class="col-lg-6 col-md-3">
+                         <h4 class="switch-fot">5 Oct 2019/1100 hrs</h4>
+                      </div>
+                      <div class="col-lg-6 col-md-4">
+                         <h6 class="mb-0 opc-70 uppercase">KL Gateway, KL</h6>
+                         <span>Grand Launch & Audition</span>
+                      </div>
+
+                   </div>
+                 </div>
+                 <hr>
+                 <div class="block-content ">
+                   <div class="row">
+                      <div class="col-lg-6 col-md-3">
+                         <h4 class="switch-fot">6 Oct 2019 / 1100hrs </h4>
+                      </div>
+                      <div class="col-lg-6 col-md-4">
+                         <h6 class="mb-0 opc-70 uppercase">Gurney Paragon mall, Penang</h6>
+                         <span>Audition</span>
+                      </div>
+
+                   </div>
+                 </div>
+                 <hr>
+ <div class="block-content ">
+                   <div class="row">
+                      <div class="col-lg-6 col-md-3">
+                         <h4 class="switch-fot">12 Oct 2019 / 1100hrs </h4>
+                      </div>
+                      <div class="col-lg-6 col-md-4">
+                         <h6 class="mb-0 opc-70 uppercase">Country garden danga bay, Johor bahru</h6>
+                         <span>Audition</span>
+                      </div>
+
+                   </div>
+                 </div>
+                 <hr>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--End row-->
+      </div>
+      <!--End container-->
+    </section>
+
+    <!--End news section-->
+    <!--Twitter section-->
+    <!--End twitter section-->
+    <!--Contact section-->
+    <section id="contact" class="contact main bg-secondary">
+      <!--Container-->
+      <div class="container">
+        <!--Row-->
+        <img src="../assets/img/sponsorbk.png" alt="" style="width:100%; margin:auto; margin-bottom:40px">
+        <div class="row justify-content-center ">
+          <div class="col-12 col-md-10 col-lg-9">
+
+            <div class="block-content  gap-one-bottom-md text-center">
+              <div class="block-title ">
+                <h1 class="uppercase">stay in touch</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End row-->
+      </div>
+      <!--End container-->
+      <!--Container-->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <ul class="feature-list feature-list-sm text-center row">
+              <li class="col-md-6  col-lg-4">
+            
+              </li>
+              <li class="col-md-6  col-lg-4">
+                 <div class="card text-center" >
+                    <div class="card-body">
+                       <h2 class="uppercase ">Contact us</h2>
+                       <p class="mb-0"><em class="uppercase h5 opc-70">Address: 2-68, Second Floor, Viva Shopping Mall,
+85, Jalan Loke Yew, 55200 Kuala Lumpur.</em>
+                          +603 2732 7759 / 58<br>
+                          enquiry@kols.com.my
+                       </p>
+                    </div>
+                 </div>
+              </li>
+              <li class="col-md-6  col-lg-4">
+
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <ul class="block-social list-inline text-center mt-4">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/ProduceKOL/"> <i class="socicon-facebook"></i> </a>
+              </li>
+          
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--End container-->
+    </section>
+    <!--End contact section-->
+    <footer class="pt-5 pb-5 footer">
+      <!--Container-->
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-6">
+            <small class="small"><span>&copy; 2019 all rights reserved - Produce Kol is trademarks of KOLS Sdn Bhd. Website powered by Unidots Asia</small>
+          </div>
+          <div class="col-md-6 text-md-right">
+            <ul class="list-inline small">
+              <li class="list-inline-item">
+                <a href="privacypolicy.html">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--End container-->
+    </footer>
+    <a class="block-top scroll" href="#wrapper">
+      <i class="icon-angle-up"></i></a>
+  </div>
+  <!-- End wrapper-->
+  <!--Javascript-->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/audio.min.js"></script>
+  <script src="js/twitterFetcher_min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/placeholders.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script src="js/angular/angular.js"></script>
+  <script src="js/angular/angular-route.js"></script>
+  <script src="js/angular/jquery.dataTables.min.js"></script>
+  <script src="js/angular/dataTables.semanticui.min.js"></script>
+  <script src="js/angular/angular-datatables.min.js"></script>
+  <script src="js/angular/semantic.js"></script>
+  <script src="js/angular/ignite.js"></script>
+  <script src="js/angular/context.js"></script>
+  <!-- Google analytics -->
+  <!-- End google analytics -->
+  <script>
+    $('.menu .item')
+      .tab();
+  </script>
+</body>
+
+</html>
